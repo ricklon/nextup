@@ -1,0 +1,21 @@
+{
+  "name": "nextup",
+  "version": "1.0.0",
+  "description": "Tournament Match Assignment Tool - OBS integration for True Finals tournaments",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter frontend dev",
+    "dev:worker": "pnpm --filter tournament-worker dev",
+    "dev:all": "pnpm --parallel --filter frontend --filter tournament-worker dev",
+    "build": "pnpm --filter frontend build",
+    "deploy:worker": "pnpm --filter tournament-worker deploy",
+    "preview": "pnpm --filter frontend preview"
+  },
+  "keywords": ["tournament", "obs", "true-finals", "cloudflare"],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.23.0",
+  "devDependencies": {
+    "wrangler": "^4.54.0"
+  }
+}

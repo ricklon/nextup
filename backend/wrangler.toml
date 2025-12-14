@@ -1,0 +1,19 @@
+name = "tournament-worker"
+main = "src/index.ts"
+compatibility_date = "2024-12-14"
+
+# D1 Database binding
+# After creating your database with: wrangler d1 create tournament-assignments
+# Replace the database_id below with the ID from the output
+[[d1_databases]]
+binding = "DB"
+database_name = "tournament-assignments"
+database_id = "YOUR_DATABASE_ID_HERE"  # Replace after running: wrangler d1 create tournament-assignments
+
+# Environment variables (optional)
+# [vars]
+# TOURNAMENT_ID = "default-tournament-id"
+
+# Production environment configuration
+[env.production]
+# vars = { TOURNAMENT_ID = "production-tournament-id" }
